@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe />
+        <OnSwipe />
+        <OnSwipe />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="11dp"
+            android:layout_width="match_parent"
+            android:id="@+id/textView2"
+            motion:layout_constraintTop_toBottomOf="@+id/textCusco" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_height="362dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.523"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="432dp"
+            android:id="@+id/imageView" />
+        <Constraint
+            android:layout_height="2dp"
+            motion:layout_editor_absoluteX="-46dp"
+            motion:layout_constraintTop_toTopOf="@+id/textCusco"
+            android:layout_width="match_parent"
+            android:id="@+id/view" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="425dp"
+            android:layout_height="70dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/imageView"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.538"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/imageView" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_height="42dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="410dp"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:id="@+id/textCusco" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="11dp"
+            android:layout_width="match_parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textCusco"
+            android:id="@+id/textView2" />
+        <Constraint
+            android:layout_marginEnd="8dp"
+            android:layout_height="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textCusco"
+            android:id="@+id/scrollView2" />
+    </ConstraintSet>
+</MotionScene>
